@@ -6,15 +6,12 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-db = SQLAlchemy(app)  
+db = SQLAlchemy(app)
 
+def create_database():
+   with app.app_context():
+      db.create_all()
 
-
-from app.scrapping.bai_scrapper import BaiScrapper
-from app.scrapping.bic_scrapper import BicScrapper
-from app.models.bai_model import BankBai
-from app.controllers import bai_controller
-from app.controllers import bic_controller
-from app.controllers import standard_controller
-
+ 
+from app.controllers import bai_controller, bic_controller, standard_controller
 

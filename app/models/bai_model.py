@@ -1,39 +1,48 @@
 from app import app, db
 from app.scrapping.bai_scrapper import bai_rates
 
+
 rates = bai_rates()
 
-class BankBai(db.Model):
-   ''''''
-   __tablename__ = 'BAI'
+
+class Bank(db.Model):
+   __tablename__ = 'bank'
 
    id = db.Column(db.Integer, primary_key=True)
-   moeda = db.Column(db.String)
-   venda = db.Column(db.String)
-   compra = db.Column(db.String)
+   name = db.Column(db.String, nullable=False)
+   exchange = db.relationship('Exchange', backref='bank')
+
+class Exchange(db.Model):
+   ''''''
+   __tablename__ = 'exchange'
+
+   id = db.Column(db.Integer, primary_key=True)
+   coin = db.Column(db.String)
+   sell = db.Column(db.String)
+   buy = db.Column(db.String)
+   bank_id = db.Column(db.Integer, db.ForeignKey('bank.id'))
 
    def __repr__(self):
       return f'<Moeda {self.moeda}>'
    
-with app.app_context():
-   db.create_all()
- 
-def database_bai():
+
+
+def bai_database():
    with app.app_context():
       try:
-         for rate in rates:
-            new_data = BankBai(moeda=rate['moeda'], venda=rate['venda'], compra =rate['compra'])
-            db.session.add(new_data)
+         bank = Bank(name='Banco BAI')
+         db.session.add(bank)
          db.session.commit()
-         print (f'Criado com sucesso! - Banco BAI')
+         print(f'{bank.name} com id: {bank.id}')
+         if bank:
+            for rate in rates:
+               new_data = Exchange(coin=rate['moeda'], sell=rate['venda'], buy =rate['compra'], bank_id = bank.id)
+               db.session.add(new_data)
+            db.session.commit() 
       except Exception as e:
-         print (f'ERRO: {e}')
+         print (f'Erro: {e}')
       finally:
-         print ('Operação terminada com sucesso!')
-
-
-
-
+         print (f'{bank.name} - Operação conluida!')
 
 
       

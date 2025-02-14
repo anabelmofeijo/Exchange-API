@@ -1,30 +1,26 @@
 from app import app, db
 from app.scrapping.bic_scrapper import main
+from app.models.bai_model import Bank, Exchange
+
 
 rates = main()
 
-class BicBank(db.Model):
-   __tablename__ = 'BIC'
-
-   id = db.Column(db.Integer, primary_key=True)
-   moeda = db.Column(db.String, nullable=False)
-   compra = db.Column(db.String, nullable=False)
-   venda = db.Column(db.String, nullable=False)
-
-
-with app.app_context():
-   db.create_all()
-
-
-def database_bic():
+def bic_database():
    with app.app_context():
       try:
-         for rate in rates:
-            new_data = BicBank(moeda=rate['moeda'], compra=rate['compra'], venda=rate['venda'])
-            db.session.add(new_data)
+         bank = Bank(name='Banco BIC')
+         db.session.add(bank)
          db.session.commit()
-         print ('Criado com sucesso! - Banco BIC')
+         print(f'{bank.name} com id: {bank.id}')
+         if bank:
+            for rate in rates:
+               new_data = Exchange(coin=rate['moeda'], sell=rate['venda'], buy =rate['compra'], bank_id = bank.id)
+               db.session.add(new_data)
+            db.session.commit() 
       except Exception as e:
          print (f'Erro: {e}')
       finally:
-         print ('Operação terminada com sucesso!')
+         print (f'{bank.name} - Operação conluida!')
+
+
+      

@@ -13,5 +13,5 @@ def create_database():
       db.create_all()
 
  
-from app.controllers import bai_controller, bic_controller, standard_controller
+from app.routes import bai_route, bic_route, standard_route
 

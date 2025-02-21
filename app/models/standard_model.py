@@ -28,4 +28,27 @@ def standard_database():
       finally:
          print(f'{bank.name} - Operação Concluida!')
 
+def actualize_standard_database():
+   with app.app_context():
+      try:
+         bank = Bank.query.get(3) 
+         if not bank:
+            print("Banco não encontrado!")
+            return
+
+         exchanges = Exchange.query.filter_by(bank_id=bank.id).all() 
+
+         for exchange, coin, sell, buy in zip(exchanges, coin_name, sell_list, buy_list):
+            exchange.coin = coin
+            exchange.sell = sell
+            exchange.buy = buy
+         
+         db.session.commit()
+         
+      except Exception as e:
+         print (f'Erro: {e}')
+
+      finally:
+         print ('Standard - Dados atualizados com Sucesso!')
+
 

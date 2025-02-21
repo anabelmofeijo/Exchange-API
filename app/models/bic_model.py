@@ -22,5 +22,27 @@ def bic_database():
       finally:
          print (f'{bank.name} - Operação conluida!')
 
+def actualize_bic_database():
+   with app.app_context():
+      try:
+         bank = Bank.query.get(2) 
+         if not bank:
+            print("Banco não encontrado!")
+            return
+
+         exchanges = Exchange.query.filter_by(bank_id=bank.id).all() 
+
+         for exchange, rate in zip(exchanges, rates):
+            exchange.coin = rate['moeda']
+            exchange.sell = rate['venda']
+            exchange.buy = rate['compra']
+        
+         db.session.commit()  
+
+      except Exception as e:
+         print(f'Erro: {e}')
+      finally:
+         print('BIC - Dados atualizados com sucesso!')
+
 
       

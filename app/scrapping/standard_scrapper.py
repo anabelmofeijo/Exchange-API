@@ -13,12 +13,12 @@ class StandardScrapper:
 
       try:
         self.page.wait_for_selector('.market-rates__table--cell__forex--details__title', state='visible')
-        datas = self.page.query_selector_all('.market-rates__table--cell__forex--details__title')
+        datas = self.page.query_selector_all('.title.title--notes.market-rates__table--cell__forex--details__currency')
         
         for data in datas:
             coin = data.inner_text().strip()
             if coin not in coins:  
-                coins.append(coin)
+                coins.append(coin[0:3])
         
         return coins  
 
@@ -72,7 +72,12 @@ class StandardScrapper:
 
 def main():
     standard = StandardScrapper()
-    standard.get_coin()
-    standard.get_buy()
-    standard.get_sell()
+    return standard.get_coin()
 
+
+if __name__ == '__main__':
+    try:
+        standard = main()
+        print(standard)
+    except Exception as e:
+        print (f'Error: {e}')

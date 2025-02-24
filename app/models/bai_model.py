@@ -67,3 +67,6 @@ def actualize_bai_database():
          print(f'Erro: {e}')
       finally:
          print('BAI - Dados atualizados com sucesso!')
+
+if __name__ == '__main__':
+   actualize_bai_database()

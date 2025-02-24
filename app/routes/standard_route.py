@@ -13,3 +13,10 @@ def get_standard_id(id):
    standard = StandardController()
    response = standard.get_rates_id(id)
    return response
+
+@app.route('/standard/convert/', methods=['GET'])
+def standard_convert():
+   standard = StandardController()
+   standard.get_data_to_convert()
+   response = standard.logic_to_convert()
+   print(response)

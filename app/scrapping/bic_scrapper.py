@@ -1,5 +1,4 @@
-from app import sync_playwright
-
+from playwright.sync_api import sync_playwright
 
 
 class BicScrapper():
@@ -36,3 +35,7 @@ def main():
    bic = BicScrapper()
    response = bic.get_rates()
    return response
+
+if __name__ == '__main__':
+   bic = main()
+   print(bic)

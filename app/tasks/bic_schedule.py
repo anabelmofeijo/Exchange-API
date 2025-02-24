@@ -10,7 +10,7 @@ class AtualizeBicDatabase():
       actualize_bic_database()
       
    def time_to_set(self):
-      schedule.every().day.at('01:04').do(self.get_new_data)
+      schedule.every().day.at('12:00').do(self.get_new_data)
    
    @staticmethod
    def loop():

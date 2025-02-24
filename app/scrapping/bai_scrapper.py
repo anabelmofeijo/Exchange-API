@@ -20,7 +20,7 @@ class BaiScrapper():
             columns = row.query_selector_all('td')
             if len(columns)>=4:
                rate_dict = {
-                  'moeda' : columns[0].inner_text().strip().replace('\n', ' '),
+                  'moeda' : columns[0].inner_text().strip()[0:3].replace('\n', ' '),
                   'venda' : columns[1].inner_text().strip(),
                   'compra' : columns[2].inner_text().strip(), 
                }
@@ -36,5 +36,9 @@ def bai_rates ():
    bai = BaiScrapper()
    rates = bai.get_rates()
    return rates
-   
+
+if __name__ == '__main__':
+   bai = bai_rates()
+   print (bai)
+     
    

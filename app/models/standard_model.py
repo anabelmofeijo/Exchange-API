@@ -51,4 +51,6 @@ def actualize_standard_database():
       finally:
          print ('Standard - Dados atualizados com Sucesso!')
 
+if __name__ == '__main__':
+   actualize_standard_database()
 

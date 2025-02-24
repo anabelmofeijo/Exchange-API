@@ -44,5 +44,7 @@ def actualize_bic_database():
       finally:
          print('BIC - Dados atualizados com sucesso!')
 
+if __name__ == '__main__':
+   actualize_bic_database()
 
       

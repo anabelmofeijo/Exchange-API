@@ -14,3 +14,10 @@ def get_bai_id(id):
    bai = BaiController
    response = bai.get_rates_id(id)
    return response
+
+@app.route('/bai/convert/', methods=['GET'])
+def bai_convert():
+   bai = BaiController()
+   bai.get_data_to_convert()
+   response = bai.logic_to_convert()
+   return response

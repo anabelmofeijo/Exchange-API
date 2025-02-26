@@ -7,7 +7,7 @@ class BaiScrapper():
       self.playwright = sync_playwright().start()
       self.browser = self.playwright.chromium.launch(headless=True)
       self.page = self.browser.new_page()
-      self.page.goto ('https://www.bancobai.ao/pt/cambios-e-valores')
+      self.page.goto ('https://www.bancobai.ao/pt/cambios-e-valores', timeout=100000)
       self.page.wait_for_load_state('networkidle')
               
    def get_rates(self) -> None:

@@ -17,7 +17,6 @@ def get_bai_id(id):
 
 @app.route('/bai/convert/', methods=['GET'])
 def bai_convert():
-   bai = BaiController()
-   bai.get_data_to_convert()
+   bai = BaiController() 
    response = bai.logic_to_convert()
    return response

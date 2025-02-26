@@ -27,57 +27,60 @@ class StandardController():
         return jsonify(exchange[id - 1])
     
     def get_data_to_convert(self):
-      self.data = request.get_json()
-      self.target_currency = str(self.data.get('target_currency', '')).upper()
-      self.source_currency = str(self.data.get('source_currency', '')).upper()
-      self.amount = self.data.get('amount')
+      self.target_currency = request.args.get('target_currency', '').upper()
+      self.source_currency = request.args.get('source_currency', '').upper()
+      self.amount = request.args.get('amount')
 
+      
       if not all([self.target_currency, self.source_currency, self.amount]):
-         return False, jsonify({'message': 'Missing required fields'})
+         return False, jsonify({'message': 'Missing required fields'}), 400
 
       try:
          self.amount = float(self.amount)
       except (ValueError, TypeError):
-         return False, jsonify({'message': 'Invalid amount'})
+         return False, jsonify({'message': 'Invalid amount'}), 400
 
       if self.target_currency != 'AOA':
          self.filter_target = Exchange.query.filter(
-            Exchange.bank_id == 1, Exchange.coin == self.target_currency
+               Exchange.bank_id == 3, Exchange.coin == self.target_currency
          ).first()
-        
+   
       else:
-         self.filter_target = Exchange.query.filter(Exchange.bank_id == 3, Exchange.coin == self.source_currency).first()
-         
-      if not self.filter_target:
-         return False, jsonify({'message': 'Currency not found'})
-      
-      try:
-         self.sell = float(self.filter_target.sell)
-      except (ValueError, AttributeError):
-         return False, jsonify({'message': 'Invalid exchange rate'})
+         self.filter_target = Exchange.query.filter(
+               Exchange.bank_id == 3, Exchange.coin == self.source_currency
+         ).first()
 
-      return True, None
+      if not self.filter_target:
+         return False, jsonify({'message': 'Currency not found'}), 404
+
+      try:
+         self.sell = float(self.filter_target.sell.replace(',', '.'))
+      except (ValueError, AttributeError):
+         return False, jsonify({'message': 'Invalid exchange rate'}), 500
+
+      return True, None, 200
 
     def logic_to_convert(self):
-      success, error_response = self.get_data_to_convert()
-      if not success:
-         return error_response
+     
+     success, error_response, status_code = self.get_data_to_convert()
+     if not success:
+         return error_response, status_code
 
-      if self.sell is None:
+     if self.sell is None:
          return jsonify({'message': 'Exchange rate not available'}), 500
 
-      if self.target_currency == 'AOA' and self.source_currency != 'AOA':
+     if self.target_currency == 'AOA' and self.source_currency != 'AOA':
          self.converted_amount = self.amount * self.sell
-         self.converted_amount = f'{self.converted_amount:.2f}'
-      elif self.target_currency != 'AOA' and self.source_currency == 'AOA':
+     elif self.target_currency != 'AOA' and self.source_currency == 'AOA':
          self.converted_amount = self.amount / self.sell
-         self.converted_amount = f'{self.converted_amount:.2f}'
-      else:
+     else:
          return jsonify({'message': 'Service not available'}), 410
 
-      return jsonify({
+     self.converted_amount = f'{self.converted_amount:.2f}'.replace('.', ',')
+
+     return jsonify({
          'target_currency': self.target_currency,
          'source_currency': self.source_currency,
          'amount': self.amount,
-         'converted_amount': self.converted_amount.replace('.', ',')
-      })
+         'converted_amount': self.converted_amount
+      }), 200

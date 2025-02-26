@@ -16,7 +16,6 @@ def get_bic_id(id):
 
 @app.route('/bic/convert/', methods=['GET'])
 def bic_convert():
-   bic = BicController()
-   bic.get_data_to_convert()
+   bic = BicController() 
    response = bic.logic_to_convert()
    return response

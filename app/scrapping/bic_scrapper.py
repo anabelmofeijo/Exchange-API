@@ -8,7 +8,11 @@ class BicScrapper():
       self.playwright = sync_playwright().start()
       self.browser = self.playwright.chromium.launch(headless=True)
       self.page = self.browser.new_page()
-      self.page.goto('https://www.bancobic.ao/inicio/particulares/index')
+      try:
+         self.page.goto('https://www.bancobic.ao/inicio/particulares/index', timeout=100000)
+      except Exception as e:
+         print (f'BIC - Erro: {e}')
+      self.page.wait_for_load_state('networkidle')
 
    def get_rates(self) -> list:
       rate_list = []
@@ -25,6 +29,8 @@ class BicScrapper():
                }
                rate_list.append(rate_dict)
          return rate_list
+      except Exception as e:
+         print (f'Erro: {e}')
       finally:
          if self.browser:
             self.browser.close()

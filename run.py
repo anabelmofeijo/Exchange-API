@@ -15,7 +15,7 @@ class Run:
         run_standard_task()
 
     def run_app(self):
-        app.run(debug=True, use_reloader=False)
+        app.run(debug=True, use_reloader=False, host="0.0.0.0", port=5000)
 
     def main(self):
         thread_app = threading.Thread(target=self.run_app)

@@ -10,6 +10,9 @@ COPY . .
 # Instala todas as dependências
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Adiciona no Dockerfile, antes do CMD
+RUN playwright install --with-deps
+
 # Expõe a porta 5000 (opcional)
 EXPOSE 5000
 

@@ -1,8 +1,9 @@
 from app import app, db
 from app.scrapping.bai_scrapper import bai_rates
 
-
-rates = bai_rates()
+def scrapper():
+   rates = bai_rates()
+   return rates
 
 
 class Bank(db.Model):
@@ -28,6 +29,7 @@ class Exchange(db.Model):
 
 
 def bai_database():
+   rates = scrapper()
    with app.app_context():
       try:
          bank = Bank(name='Banco BAI')
@@ -47,6 +49,7 @@ def bai_database():
          print (f'{bank.name} - Operação conluida!')
 
 def actualize_bai_database():
+   rates = scrapper()
    with app.app_context():
       try:
          bank = Bank.query.get(1) 

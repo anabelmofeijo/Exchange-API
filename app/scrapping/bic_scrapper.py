@@ -12,7 +12,7 @@ class BicScrapper():
          self.page.goto('https://www.bancobic.ao/inicio/particulares/index', timeout=100000)
       except Exception as e:
          print (f'BIC - Erro: {e}')
-      self.page.wait_for_load_state('networkidle')
+      self.page.wait_for_load_state('domcontentloaded')
 
    def get_rates(self) -> list:
       rate_list = []

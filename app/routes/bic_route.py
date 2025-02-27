@@ -8,10 +8,10 @@ def get_bic_rates():
    response = bic.get_rates()
    return response
 
-@app.route('/get_bic_rates/<int:id>', methods=['GET'])
-def get_bic_id(id):
+@app.route('/get_bic_rates/<string:coin>', methods=['GET'])
+def get_bic_id(coin):
    bic = BicController()
-   response = bic.get_rates_id(id)
+   response = bic.get_rates_id(coin)
    return response
 
 @app.route('/bic/convert/', methods=['GET'])

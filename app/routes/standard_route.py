@@ -8,10 +8,10 @@ def get_standard_rates():
    response = standard.get_rates()
    return response
 
-@app.route('/get_standard_rates/<int:id>', methods=['GET'])
-def get_standard_id(id):
+@app.route('/get_standard_rates/<string:coin>', methods=['GET'])
+def get_standard_id(coin):
    standard = StandardController()
-   response = standard.get_rates_id(id)
+   response = standard.get_rates_id(coin)
    return response
 
 @app.route('/standard/convert/', methods=['GET']) 

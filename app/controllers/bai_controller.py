@@ -25,14 +25,14 @@ class BaiController:
       return jsonify(exchange)
    
    @staticmethod
-   def get_rates_id(id):
-      exchange_list = Exchange.query.filter(Exchange.bank_id==1).all()
+   def get_rates_id(coin):
+      exchange_list = Exchange.query.filter(Exchange.bank_id==1, Exchange.coin == coin.upper()).all()
       filter_exchange = []
       if not exchange_list:
          return jsonify({'message':'Not Found!'}), 404
       for data in exchange_list:
          filter_exchange.append({'moeda': data.coin,'compra': data.buy,'venda': data.sell}) 
-      return jsonify(filter_exchange[id - 1])
+      return jsonify(filter_exchange), 200
      
    def get_data_to_convert(self):
     self.target_currency = request.args.get('target_currency', '').upper()

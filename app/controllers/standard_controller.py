@@ -17,14 +17,14 @@ class StandardController():
         return jsonify(exchange)
     
     @staticmethod
-    def get_rates_id(id):
-        data = Exchange.query.filter(Exchange.bank_id==3).all()
+    def get_rates_id(coin):
+        data = Exchange.query.filter(Exchange.bank_id==3, Exchange.coin == coin.upper()).all()
         exchange = []
         if not data:
-            return jsonify({'message': 'Not Found'})
+            return jsonify({'message': 'Exchange Rate not Found!'}), 404
         for rate in data:
             exchange.append({'coin': rate.coin, 'buy':rate.buy, 'sell':rate.sell})  
-        return jsonify(exchange[id - 1])
+        return jsonify(exchange), 200
     
     def get_data_to_convert(self):
       self.target_currency = request.args.get('target_currency', '').upper()

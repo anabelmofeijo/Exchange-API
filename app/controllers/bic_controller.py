@@ -17,14 +17,14 @@ class BicController():
       return jsonify(exchange)
    
    @staticmethod
-   def get_rates_id(id):
-      rates = Exchange.query.filter(Exchange.bank_id==2).all()
+   def get_rates_id(coin):
+      rates = Exchange.query.filter(Exchange.bank_id==2, Exchange.coin == coin.upper() ).all()
       exchange = []
       if not rates:
-         return jsonify({'message':'Not Found!'})
+         return jsonify({'message':'Exchange Rate not Found!'}), 404
       for rate in rates:
          exchange.append({'moeda':rate.coin,'compra': rate.buy,'venda': rate.sell})
-      return jsonify(exchange[id - 1])
+      return jsonify(exchange), 200
    
    def get_data_to_convert(self):
     self.target_currency = request.args.get('target_currency', '').upper()

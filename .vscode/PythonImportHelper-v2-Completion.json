@@ -1,0 +1,700 @@
+[
+    {
+        "label": "jsonify",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Bank",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Bank",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_bai_database",
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "isExtraImport": true,
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "bai_rates",
+        "importPath": "app.scrapping.bai_scrapper",
+        "description": "app.scrapping.bai_scrapper",
+        "isExtraImport": true,
+        "detail": "app.scrapping.bai_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "bai_rates",
+        "importPath": "app.scrapping.bai_scrapper",
+        "description": "app.scrapping.bai_scrapper",
+        "isExtraImport": true,
+        "detail": "app.scrapping.bai_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "app.scrapping.bic_scrapper",
+        "description": "app.scrapping.bic_scrapper",
+        "isExtraImport": true,
+        "detail": "app.scrapping.bic_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "importPath": "app.scrapping.bic_scrapper",
+        "description": "app.scrapping.bic_scrapper",
+        "isExtraImport": true,
+        "detail": "app.scrapping.bic_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScrapper",
+        "importPath": "app.scrapping.standard_scrapper",
+        "description": "app.scrapping.standard_scrapper",
+        "isExtraImport": true,
+        "detail": "app.scrapping.standard_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "BaiController",
+        "importPath": "app.controllers.bai_controller",
+        "description": "app.controllers.bai_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.bai_controller",
+        "documentation": {}
+    },
+    {
+        "label": "BicController",
+        "importPath": "app.controllers.bic_controller",
+        "description": "app.controllers.bic_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.bic_controller",
+        "documentation": {}
+    },
+    {
+        "label": "StandardController",
+        "importPath": "app.controllers.standard_controller",
+        "description": "app.controllers.standard_controller",
+        "isExtraImport": true,
+        "detail": "app.controllers.standard_controller",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_bic_database",
+        "importPath": "app.models.bic_model",
+        "description": "app.models.bic_model",
+        "isExtraImport": true,
+        "detail": "app.models.bic_model",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_standard_database",
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "isExtraImport": true,
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "run_bai_task",
+        "importPath": "app.tasks.bai_schedule",
+        "description": "app.tasks.bai_schedule",
+        "isExtraImport": true,
+        "detail": "app.tasks.bai_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "run_bic_task",
+        "importPath": "app.tasks.bic_schedule",
+        "description": "app.tasks.bic_schedule",
+        "isExtraImport": true,
+        "detail": "app.tasks.bic_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "run_standard_task",
+        "importPath": "app.tasks.standard_schedule",
+        "description": "app.tasks.standard_schedule",
+        "isExtraImport": true,
+        "detail": "app.tasks.standard_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "BaiController",
+        "kind": 6,
+        "importPath": "app.controllers.bai_controller",
+        "description": "app.controllers.bai_controller",
+        "peekOfCode": "class BaiController:\n   def __init__(self) -> None:\n       self.converted_amount = None\n       self.target_currency = None\n       self.source_currency = None\n       self.filter_target = None\n       self.amount = None\n       self.sell = None\n   @staticmethod\n   def get_rates():",
+        "detail": "app.controllers.bai_controller",
+        "documentation": {}
+    },
+    {
+        "label": "BicController",
+        "kind": 6,
+        "importPath": "app.controllers.bic_controller",
+        "description": "app.controllers.bic_controller",
+        "peekOfCode": "class BicController():\n   @staticmethod\n   def get_rates():\n      rates = Exchange.query.filter(Exchange.bank_id==2).all()\n      exchange = []\n      if not rates:\n         return jsonify({'message':'Not Found!'})\n      for rate in rates:\n         exchange.append({'coin':rate.coin,'buy': rate.buy,'sell': rate.sell})\n      return jsonify(exchange)",
+        "detail": "app.controllers.bic_controller",
+        "documentation": {}
+    },
+    {
+        "label": "StandardController",
+        "kind": 6,
+        "importPath": "app.controllers.standard_controller",
+        "description": "app.controllers.standard_controller",
+        "peekOfCode": "class StandardController():\n    @staticmethod\n    def get_rates():\n        data = Exchange.query.filter(Exchange.bank_id==3).all()\n        exchange = []\n        if not data:\n                return jsonify({'message': 'Not Found'})\n        for rate in data:\n            exchange.append({'coin': rate.coin, 'buy':rate.buy, 'sell':rate.sell})  \n        return jsonify(exchange)",
+        "detail": "app.controllers.standard_controller",
+        "documentation": {}
+    },
+    {
+        "label": "Bank",
+        "kind": 6,
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "peekOfCode": "class Bank(db.Model):\n   __tablename__ = 'bank'\n   id = db.Column(db.Integer, primary_key=True)\n   name = db.Column(db.String, nullable=False)\n   exchange = db.relationship('Exchange', backref='bank')\nclass Exchange(db.Model):\n   ''''''\n   __tablename__ = 'exchange'\n   id = db.Column(db.Integer, primary_key=True)\n   coin = db.Column(db.String)",
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "Exchange",
+        "kind": 6,
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "peekOfCode": "class Exchange(db.Model):\n   ''''''\n   __tablename__ = 'exchange'\n   id = db.Column(db.Integer, primary_key=True)\n   coin = db.Column(db.String)\n   sell = db.Column(db.String)\n   buy = db.Column(db.String)\n   bank_id = db.Column(db.Integer, db.ForeignKey('bank.id'))\n   def __repr__(self):\n      return f'<Moeda {self.moeda}>'",
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "scrapper",
+        "kind": 2,
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "peekOfCode": "def scrapper():\n   rates = bai_rates()\n   return rates\nclass Bank(db.Model):\n   __tablename__ = 'bank'\n   id = db.Column(db.Integer, primary_key=True)\n   name = db.Column(db.String, nullable=False)\n   exchange = db.relationship('Exchange', backref='bank')\nclass Exchange(db.Model):\n   ''''''",
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "bai_database",
+        "kind": 2,
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "peekOfCode": "def bai_database():\n   rates = scrapper()\n   with app.app_context():\n      try:\n         bank = Bank(name='Banco BAI')\n         db.session.add(bank)\n         db.session.commit()\n         print(f'{bank.name} com id: {bank.id}')\n         if bank:\n            for rate in rates:",
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_bai_database",
+        "kind": 2,
+        "importPath": "app.models.bai_model",
+        "description": "app.models.bai_model",
+        "peekOfCode": "def actualize_bai_database():\n   rates = scrapper()\n   with app.app_context():\n      try:\n         bank = Bank.query.get(1) \n         if not bank:\n            print(\"Banco não encontrado!\")\n            return\n         exchanges = Exchange.query.filter_by(bank_id=bank.id).all() \n         for exchange, rate in zip(exchanges, rates):",
+        "detail": "app.models.bai_model",
+        "documentation": {}
+    },
+    {
+        "label": "bic_database",
+        "kind": 2,
+        "importPath": "app.models.bic_model",
+        "description": "app.models.bic_model",
+        "peekOfCode": "def bic_database():\n   with app.app_context():\n      try:\n         bank = Bank(name='Banco BIC')\n         db.session.add(bank)\n         db.session.commit()\n         print(f'{bank.name} com id: {bank.id}')\n         if bank:\n            for rate in rates:\n               new_data = Exchange(coin=rate['coin'], sell=rate['sell'], buy =rate['buy'], bank_id = bank.id)",
+        "detail": "app.models.bic_model",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_bic_database",
+        "kind": 2,
+        "importPath": "app.models.bic_model",
+        "description": "app.models.bic_model",
+        "peekOfCode": "def actualize_bic_database():\n   with app.app_context():\n      try:\n         bank = Bank.query.get(2) \n         if not bank:\n            print(\"Banco não encontrado!\")\n            return\n         exchanges = Exchange.query.filter_by(bank_id=bank.id).all() \n         for exchange, rate in zip(exchanges, rates):\n            exchange.coin = rate['coin']",
+        "detail": "app.models.bic_model",
+        "documentation": {}
+    },
+    {
+        "label": "rates",
+        "kind": 5,
+        "importPath": "app.models.bic_model",
+        "description": "app.models.bic_model",
+        "peekOfCode": "rates = main()\ndef bic_database():\n   with app.app_context():\n      try:\n         bank = Bank(name='Banco BIC')\n         db.session.add(bank)\n         db.session.commit()\n         print(f'{bank.name} com id: {bank.id}')\n         if bank:\n            for rate in rates:",
+        "detail": "app.models.bic_model",
+        "documentation": {}
+    },
+    {
+        "label": "standard_database",
+        "kind": 2,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "def standard_database():\n   ''''''\n   with app.app_context():\n      try:\n         bank = Bank(name='Standard Bank')\n         db.session.add(bank)\n         db.session.commit()\n         print (f'{bank.name} com id: {bank.id}')\n         if bank:\n            for coin, buy, sell in zip(coin_name, buy_list, sell_list):",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "actualize_standard_database",
+        "kind": 2,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "def actualize_standard_database():\n   with app.app_context():\n      try:\n         bank = Bank.query.get(3) \n         if not bank:\n            print(\"Banco não encontrado!\")\n            return\n         exchanges = Exchange.query.filter_by(bank_id=bank.id).all() \n         for exchange, coin, sell, buy in zip(exchanges, coin_name, sell_list, buy_list):\n            exchange.coin = coin",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "standard",
+        "kind": 5,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "standard = StandardScrapper()\ncoin_name = standard.get_coin()\nbuy_list = standard.get_buy()\nsell_list = standard.get_sell()\ndef standard_database():\n   ''''''\n   with app.app_context():\n      try:\n         bank = Bank(name='Standard Bank')\n         db.session.add(bank)",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "coin_name",
+        "kind": 5,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "coin_name = standard.get_coin()\nbuy_list = standard.get_buy()\nsell_list = standard.get_sell()\ndef standard_database():\n   ''''''\n   with app.app_context():\n      try:\n         bank = Bank(name='Standard Bank')\n         db.session.add(bank)\n         db.session.commit()",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "buy_list",
+        "kind": 5,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "buy_list = standard.get_buy()\nsell_list = standard.get_sell()\ndef standard_database():\n   ''''''\n   with app.app_context():\n      try:\n         bank = Bank(name='Standard Bank')\n         db.session.add(bank)\n         db.session.commit()\n         print (f'{bank.name} com id: {bank.id}')",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "sell_list",
+        "kind": 5,
+        "importPath": "app.models.standard_model",
+        "description": "app.models.standard_model",
+        "peekOfCode": "sell_list = standard.get_sell()\ndef standard_database():\n   ''''''\n   with app.app_context():\n      try:\n         bank = Bank(name='Standard Bank')\n         db.session.add(bank)\n         db.session.commit()\n         print (f'{bank.name} com id: {bank.id}')\n         if bank:",
+        "detail": "app.models.standard_model",
+        "documentation": {}
+    },
+    {
+        "label": "get_bai_rates",
+        "kind": 2,
+        "importPath": "app.routes.bai_route",
+        "description": "app.routes.bai_route",
+        "peekOfCode": "def get_bai_rates():\n   bai = BaiController()\n   response = bai.get_rates()\n   return response\n@app.route('/get_bai_rates/<string:coin>', methods=['GET'])\ndef get_bai_id(coin):\n   bai = BaiController\n   response = bai.get_rates_id(coin)\n   return response\n@app.route('/bai/convert/', methods=['GET'])",
+        "detail": "app.routes.bai_route",
+        "documentation": {}
+    },
+    {
+        "label": "get_bai_id",
+        "kind": 2,
+        "importPath": "app.routes.bai_route",
+        "description": "app.routes.bai_route",
+        "peekOfCode": "def get_bai_id(coin):\n   bai = BaiController\n   response = bai.get_rates_id(coin)\n   return response\n@app.route('/bai/convert/', methods=['GET'])\ndef bai_convert():\n   bai = BaiController() \n   response = bai.logic_to_convert()\n   return response",
+        "detail": "app.routes.bai_route",
+        "documentation": {}
+    },
+    {
+        "label": "bai_convert",
+        "kind": 2,
+        "importPath": "app.routes.bai_route",
+        "description": "app.routes.bai_route",
+        "peekOfCode": "def bai_convert():\n   bai = BaiController() \n   response = bai.logic_to_convert()\n   return response",
+        "detail": "app.routes.bai_route",
+        "documentation": {}
+    },
+    {
+        "label": "get_bic_rates",
+        "kind": 2,
+        "importPath": "app.routes.bic_route",
+        "description": "app.routes.bic_route",
+        "peekOfCode": "def get_bic_rates():\n   bic = BicController()\n   response = bic.get_rates()\n   return response\n@app.route('/get_bic_rates/<string:coin>', methods=['GET'])\ndef get_bic_id(coin):\n   bic = BicController()\n   response = bic.get_rates_id(coin)\n   return response\n@app.route('/bic/convert/', methods=['GET'])",
+        "detail": "app.routes.bic_route",
+        "documentation": {}
+    },
+    {
+        "label": "get_bic_id",
+        "kind": 2,
+        "importPath": "app.routes.bic_route",
+        "description": "app.routes.bic_route",
+        "peekOfCode": "def get_bic_id(coin):\n   bic = BicController()\n   response = bic.get_rates_id(coin)\n   return response\n@app.route('/bic/convert/', methods=['GET'])\ndef bic_convert():\n   bic = BicController() \n   response = bic.logic_to_convert()\n   return response",
+        "detail": "app.routes.bic_route",
+        "documentation": {}
+    },
+    {
+        "label": "bic_convert",
+        "kind": 2,
+        "importPath": "app.routes.bic_route",
+        "description": "app.routes.bic_route",
+        "peekOfCode": "def bic_convert():\n   bic = BicController() \n   response = bic.logic_to_convert()\n   return response",
+        "detail": "app.routes.bic_route",
+        "documentation": {}
+    },
+    {
+        "label": "get_standard_rates",
+        "kind": 2,
+        "importPath": "app.routes.standard_route",
+        "description": "app.routes.standard_route",
+        "peekOfCode": "def get_standard_rates():\n   standard = StandardController()\n   response = standard.get_rates()\n   return response\n@app.route('/get_standard_rates/<string:coin>', methods=['GET'])\ndef get_standard_id(coin):\n   standard = StandardController()\n   response = standard.get_rates_id(coin)\n   return response\n@app.route('/standard/convert/', methods=['GET']) ",
+        "detail": "app.routes.standard_route",
+        "documentation": {}
+    },
+    {
+        "label": "get_standard_id",
+        "kind": 2,
+        "importPath": "app.routes.standard_route",
+        "description": "app.routes.standard_route",
+        "peekOfCode": "def get_standard_id(coin):\n   standard = StandardController()\n   response = standard.get_rates_id(coin)\n   return response\n@app.route('/standard/convert/', methods=['GET']) \ndef standard_convert():\n   standard = StandardController() \n   response = standard.logic_to_convert()\n   return response",
+        "detail": "app.routes.standard_route",
+        "documentation": {}
+    },
+    {
+        "label": "standard_convert",
+        "kind": 2,
+        "importPath": "app.routes.standard_route",
+        "description": "app.routes.standard_route",
+        "peekOfCode": "def standard_convert():\n   standard = StandardController() \n   response = standard.logic_to_convert()\n   return response",
+        "detail": "app.routes.standard_route",
+        "documentation": {}
+    },
+    {
+        "label": "BaiScrapper",
+        "kind": 6,
+        "importPath": "app.scrapping.bai_scrapper",
+        "description": "app.scrapping.bai_scrapper",
+        "peekOfCode": "class BaiScrapper():\n   ''''''\n   def __init__(self) -> None:\n      ''''''\n      self.playwright = sync_playwright().start()\n      self.browser = self.playwright.chromium.launch(headless=True)\n      self.page = self.browser.new_page()\n      self.page.goto ('https://www.bancobai.ao/pt/cambios-e-valores', timeout=100000)\n   def get_rates(self) -> None:\n      ''''''",
+        "detail": "app.scrapping.bai_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "bai_rate",
+        "kind": 2,
+        "importPath": "app.scrapping.bai_scrapper",
+        "description": "app.scrapping.bai_scrapper",
+        "peekOfCode": "def bai_rates ():\n   bai = BaiScrapper()\n   rates = bai.get_rates()\n   return rates\nif __name__ == '__main__':\n   bai = bai_rates()\n   print (bai)",
+        "detail": "app.scrapping.bai_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "BicScrapper",
+        "kind": 6,
+        "importPath": "app.scrapping.bic_scrapper",
+        "description": "app.scrapping.bic_scrapper",
+        "peekOfCode": "class BicScrapper():\n   def __init__(self):\n      ''''''\n      self.playwright = sync_playwright().start()\n      self.browser = self.playwright.chromium.launch(headless=True)\n      self.page = self.browser.new_page()\n      try:\n         self.page.goto('https://www.bancobic.ao/inicio/particulares/index', timeout=100000)\n      except Exception as e:\n         print (f'BIC - Erro: {e}')",
+        "detail": "app.scrapping.bic_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app.scrapping.bic_scrapper",
+        "description": "app.scrapping.bic_scrapper",
+        "peekOfCode": "def main():\n   bic = BicScrapper()\n   response = bic.get_rates()\n   return response\nif __name__ == '__main__':\n   bic = main()\n   print(bic)",
+        "detail": "app.scrapping.bic_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScrapper",
+        "kind": 6,
+        "importPath": "app.scrapping.standard_scrapper",
+        "description": "app.scrapping.standard_scrapper",
+        "peekOfCode": "class StandardScrapper:\n    def __init__(self):\n        self.playwright = sync_playwright().start()\n        self.browser = self.playwright.chromium.launch(headless=True)\n        self.context = self.browser.new_context()\n        self.page = self.context.new_page()\n        self.page.goto('https://www.standardbank.co.ao/angola/pt/Grandes-Empresas/Mercado-de-Capitais/cambios', wait_until='domcontentloaded')\n    def get_coin(self) -> list:\n      coins = []  \n      try:",
+        "detail": "app.scrapping.standard_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app.scrapping.standard_scrapper",
+        "description": "app.scrapping.standard_scrapper",
+        "peekOfCode": "def main():\n    standard = StandardScrapper()\n    return standard.get_coin()\nif __name__ == '__main__':\n    try:\n        standard = main()\n        print(standard)\n    except Exception as e:\n        print (f'Error: {e}')",
+        "detail": "app.scrapping.standard_scrapper",
+        "documentation": {}
+    },
+    {
+        "label": "ActualizaDatabase",
+        "kind": 6,
+        "importPath": "app.tasks.bai_schedule",
+        "description": "app.tasks.bai_schedule",
+        "peekOfCode": "class ActualizaDatabase():\n   def get_new_data(self):  \n      actualize_bai_database()\n   def time_to_set(self):\n      schedule.every().day.at('12:00').do(self.get_new_data)\n   @staticmethod\n   def loop():\n      while True:\n         schedule.run_pending()\n         time.sleep(1)",
+        "detail": "app.tasks.bai_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "run_bai_task",
+        "kind": 2,
+        "importPath": "app.tasks.bai_schedule",
+        "description": "app.tasks.bai_schedule",
+        "peekOfCode": "def run_bai_task():\n   set_data = ActualizaDatabase()\n   set_data.time_to_set()\n   set_data.loop()",
+        "detail": "app.tasks.bai_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "AtualizeBicDatabase",
+        "kind": 6,
+        "importPath": "app.tasks.bic_schedule",
+        "description": "app.tasks.bic_schedule",
+        "peekOfCode": "class AtualizeBicDatabase():\n   def get_new_data(self):\n      actualize_bic_database()\n   def time_to_set(self):\n      schedule.every().day.at('12:00').do(self.get_new_data)\n   @staticmethod\n   def loop():\n      while True:\n         schedule.run_pending\n         time.sleep(1)",
+        "detail": "app.tasks.bic_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "run_bic_task",
+        "kind": 2,
+        "importPath": "app.tasks.bic_schedule",
+        "description": "app.tasks.bic_schedule",
+        "peekOfCode": "def run_bic_task():\n   set_data = AtualizeBicDatabase()\n   set_data.time_to_set()\n   set_data.loop()",
+        "detail": "app.tasks.bic_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "Actualize_std_database",
+        "kind": 6,
+        "importPath": "app.tasks.standard_schedule",
+        "description": "app.tasks.standard_schedule",
+        "peekOfCode": "class Actualize_std_database():\n   def get_new_data(self):\n      actualize_standard_database()\n   def time_to_set(self):\n      schedule.every().day.at('12:00').do(self.get_new_data)\n   @staticmethod\n   def loop():\n      while True:\n         schedule.run_pending\n         time.sleep(1)",
+        "detail": "app.tasks.standard_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "run_standard_task",
+        "kind": 2,
+        "importPath": "app.tasks.standard_schedule",
+        "description": "app.tasks.standard_schedule",
+        "peekOfCode": "def run_standard_task():\n   set_data = Actualize_std_database()\n   set_data.time_to_set()\n   set_data.loop()",
+        "detail": "app.tasks.standard_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "Run",
+        "kind": 6,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "class Run: \n    def bai_database(self):\n        run_bai_task()\n    def bic_database(self):\n        run_bic_task()\n    def std_database(self):\n        run_standard_task()\n    def run_app(self):\n        app.run(debug=True, use_reloader=False, host=\"0.0.0.0\", port=5000)\n    def main(self):",
+        "detail": "run",
+        "documentation": {}
+    }
+]
